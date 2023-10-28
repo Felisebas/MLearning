@@ -18,26 +18,26 @@ class TensorCalculator:
         random = torch.rand([dim_x, dim_y])
         return random
 
-    def tensor_sum(self, dim_x, dim_y, dim_z, dim_g):
-        a = torch.tensor([dim_x, dim_y])
-        b = torch.tensor([dim_z, dim_g])
-        suma = a + b
+    def tensor_sum(self, tensor1, tensor2):
+        a = tensor1
+        b = tensor2
+        suma = torch.add(a, b)
         return suma
 
-    def tensor_mult(self, dim_x, dim_y, dim_z, dim_g):
-        a = torch.tensor([dim_x, dim_y])
-        b = torch.tensor([dim_z, dim_g])
+    def tensor_mult(self, tensor1, tensor2):
+        a = tensor1
+        b = tensor2
         multp = torch.matmul(a, b)
         return multp
 
-    def tensor_div(self, dim_x, dim_y, dim_z, dim_g):
-        a = torch.tensor([dim_x, dim_y])
-        b = torch.tensor([dim_z, dim_g])
+    def tensor_div(self, tensor1, tensor2):
+        a = tensor1
+        b = tensor2
         division = torch.div(a, b)
         return division
 
-    def tensor_rest(self, dim_x, dim_y, dim_z, dim_g):
-        a = torch.tensor([dim_x, dim_y])
-        b = torch.tensor([dim_z, dim_g])
+    def tensor_rest(self, tensor1, tensor2):
+        a = tensor1
+        b = tensor2
         r = torch.sub(a, b)
         return r
