@@ -6,27 +6,22 @@ A brief comment just to modify the file
 """
 
 from setuptools import setup, find_packages
-from MLearning import __author__,__version__,__name__
+from module_structure import __name__
 
-
-VERSION = __version__
-AUTHOR = __author__
 NAME = __name__
 
 setup(
-    name                    = NAME,
-    version                 = VERSION,
-    description             = 'Brief description of your package',
-    author                  = AUTHOR,
-    author_email            = 'felisebas2002@gmail.com',
-    license                 = 'MIT',
-    python_requires         = '>=3.9.5',
-    packages                = find_packages(),
-    include_package_data    = True,
-    package_data            = {'': ['resources/*.csv','resources/clusters/*.csv']},
-    install_requires        = [
-                                'pandas',
-                                'numpy',
-                                'torch'
-                                ]
-     )
+    name=NAME,
+    description='Brief description of your package',
+    author_email='felisebas2002@gmail.com',
+    license='MIT',
+    python_requires='>=3.9.5',
+    packages=find_packages(),
+    include_package_data=True,
+    package_data={'': ['resources/*.csv', 'resources/clusters/*.csv']},
+    install_requires=[
+        'pandas',
+        'numpy',
+        'torch'
+    ]
+)
