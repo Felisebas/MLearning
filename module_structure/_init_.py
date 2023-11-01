@@ -1,6 +1,6 @@
 from module_structure import tensor_calculator
 
-__all__ = tensor_calculator
+__all__ = tensor_calculator.TensorCalculator
 
 MAJOR = 1
 MINOR = 0
