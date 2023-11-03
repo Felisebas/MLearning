@@ -25,7 +25,7 @@ from ejercicio.tensor_calculator import *
 ````bash
 import torch
 ````
-3. Create an instance of the class called "TensorCalculator"
+3. Create an instance of the class "TensorCalculator"
 
 4. Call the functions to try them:
    - instance.tensor_zeros(dim_x,dim_y)
