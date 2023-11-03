@@ -12,10 +12,21 @@ can try different functions of tensors like:
 
 # How to try the functions?
 
-1. Install the repository in terminal (or in the first cell if you are in jupyter) with the code "pip install -U git+https://github.com/Felisebas/MLearning.git"
-2. Import the file as library with the code "from ejercicio.tensor_calculator import *"
+1. Install the repository in terminal (or in the first cell if you are in jupyter) with the code 
+```bash
+pip install -U git+https://github.com/Felisebas/MLearning.git
+```
+
+2. Import the file as library with the code 
+```bash
+from ejercicio.tensor_calculator import *
+```
 3. Import the library torch to create the tensors with the code "import torch"
+````bash
+import torch
+````
 3. Create an instance of the class called "TensorCalculator"
+
 4. Call the functions to try them:
    - instance.tensor_zeros(dim_x,dim_y)
    - instance.tensor_ones(dim_x,dim_y)
@@ -27,7 +38,7 @@ can try different functions of tensors like:
 
 # Examples
 
-```python
+```bash
 pip install -U git+https://github.com/Felisebas/MLearning.git
 
 from ejercicio.tensor_calculator import *
