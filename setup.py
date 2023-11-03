@@ -6,7 +6,7 @@ A brief comment just to modify the file
 """
 
 from setuptools import setup, find_packages
-from module_structure import __name__
+from ejercicio import __name__
 
 NAME = __name__
 

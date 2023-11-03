@@ -1,13 +1,7 @@
 import torch
 
-__all__ = ['TensorCalculator']
-
 
 class TensorCalculator:
-
-    def __init__(self):
-        pass
-
     def tensor_zeros(self, dim_x, dim_y):
         zeros = torch.zeros([dim_x, dim_y])
         return zeros
@@ -43,3 +37,6 @@ class TensorCalculator:
         b = tensor2
         r = torch.sub(a, b)
         return r
+
+
+__all__ = ['TensorCalculator']

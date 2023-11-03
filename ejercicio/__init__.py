@@ -1,4 +1,4 @@
-from module_structure import tensor_calculator
+from ejercicio.tensor_calculator import *
 
 
 __all__ = tensor_calculator.__all__
@@ -12,4 +12,4 @@ COMMIT = 12
 
 __version__ = f'{MAJOR}.{MINOR}.{PATCH}.{COMMIT}'
 __author__ = 'Universidad Francisco de Vitoria'
-__name__ = 'module_structure'
+__name__ = 'ejercicio'
